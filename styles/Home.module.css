@@ -1,0 +1,34 @@
+.popover {
+  border: 1px solid #eaeaea;
+  padding: 8px;
+}
+
+.popover[data-state="open"] {
+  animation: open 100ms ease;
+}
+
+.popover[data-state="closed"] {
+  animation: close 100ms ease;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes close {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
